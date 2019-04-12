@@ -1,4 +1,3 @@
 export const employees=`
-employees: [Employees]!
-
-`
+    employees: [Employees]!
+`;

@@ -1,8 +1,8 @@
 import Sequelize from 'sequelize';
 
-export const db = new Sequelize('fullstackdemo', 'root', '',{
+export const db = new Sequelize('fullstackdemo', 'root', '', {
     // host :'0.0.0.0',
-    host :'localhost',
+    host :'0.0.0.0',
     dialect:'mysql',
     operatorsAliases: false,
     port:3306

@@ -1,11 +1,12 @@
-import {EmployeeModel} from '../../models'
+import { EmployeeModel } from '../../models'
 
-export const allEmployees = async(_, arg, context)=>{
-    // return async(_, arg, context)=> {
+export const allEmployees = () => {
+    return async (_, arg, context) => {
         console.log('arg', arg);
-        let employees = await EmployeeModel.findAll() 
-        return employees
-    // }
-    
+        let employees = await EmployeeModel.findAll();
+        console.log(employees);
+        return employees;
+    }
+
 }
 
